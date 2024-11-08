@@ -21,4 +21,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "Tip Time"
 include(":app")
- 

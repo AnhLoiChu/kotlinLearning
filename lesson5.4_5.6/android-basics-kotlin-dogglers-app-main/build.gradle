@@ -14,16 +14,13 @@
 * limitations under the License.
 */
 buildscript {
-    ext {
-        agp_version = '8.5.0'
-    }
     ext.kotlin_version = "1.6.21"
     repositories {
         google()
         mavenCentral()
     }
     dependencies {
-        classpath "com.android.tools.build:gradle:$agp_version"
+        classpath 'com.android.tools.build:gradle:8.7.2'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -36,6 +33,11 @@ allprojects {
         google()
         mavenCentral()
     }
+    /*maven {
+        url 'https://maven.google.com/'
+        name 'Google'
+    }*/
+
 }
 
 task clean(type: Delete) {

@@ -23,7 +23,7 @@ fun feedTheFish() {
     println ("Today is $day and the fish eat $food")
     println("Change water: ${shouldChangeWater(day)}")
 }
-fun shouldChangeWater (day: String, temperature: Int = 22, dirty: Int = 20): Boolean {
+fun shouldChangeWater (day: String, temperature: Int =22, dirty: Int = 20): Boolean {
     return when {
         isTooHot(temperature) -> true
         isDirty(dirty) -> true

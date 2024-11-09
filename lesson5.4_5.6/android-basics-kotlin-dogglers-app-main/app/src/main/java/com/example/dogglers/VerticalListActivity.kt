@@ -20,7 +20,6 @@ import android.os.Bundle
 import com.example.dogglers.adapter.DogCardAdapter
 import com.example.dogglers.const.Layout
 import com.example.dogglers.databinding.ActivityVerticalListBinding
-import missing.namespace.databinding.ActivityVerticalListBinding
 
 class VerticalListActivity : AppCompatActivity() {
 

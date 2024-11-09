@@ -28,9 +28,6 @@ class ItemAdapter(
         val imageView: ImageView = view.findViewById(R.id.item_image)
     }
 
-    /**
-     * Create new views (invoked by the layout manager)
-     */
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int):
             ItemViewHolder {
         // create a new view 
@@ -40,8 +37,7 @@ class ItemAdapter(
         return ItemViewHolder(adapterLayout)
     }
 
-/** * Replace the contents of a view (invoked by the layout manager)
- */
+
 override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
     val item = dataset[position]
     holder.textView.text =
@@ -49,8 +45,5 @@ override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
     holder.imageView.setImageResource(item.imageResourceId)
 }
 
-    /**
-     * Return the size of your dataset (invoked by the layout manager)
-     */
     override fun getItemCount() = dataset.size
 }

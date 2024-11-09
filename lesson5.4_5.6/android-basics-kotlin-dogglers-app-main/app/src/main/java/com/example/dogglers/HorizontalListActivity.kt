@@ -20,7 +20,6 @@ import android.os.Bundle
 import com.example.dogglers.adapter.DogCardAdapter
 import com.example.dogglers.const.Layout
 import com.example.dogglers.databinding.ActivityHorizontalListBinding
-import missing.namespace.databinding.ActivityHorizontalListBinding
 
 class HorizontalListActivity : AppCompatActivity() {
 
